@@ -14,6 +14,13 @@ MEC4126F, prac 3
 
 // GLOBAL VARIABLES ----------------------------------------------------------|
 
+struct age_data
+{
+	int date;
+	int month;
+	int year;
+	int age;
+};
 
 // FUNCTION DECLARATIONS -----------------------------------------------------|
 
