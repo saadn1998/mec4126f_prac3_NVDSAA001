@@ -30,10 +30,22 @@ void main(void);                                                   //COMPULSORY
 
 void main(void)
 {
+	init_LCD();
+	struct age_data x1= {11, 12, 1998, 23};
+	char buffer[80];
 	
 
 	while(1)
 	{
+		for(int x=0;x<=x1.age;x++)
+			{
+
+				sprintf(buffer,"%d",x);
+				delay(100000);
+				lcd_putstring(buffer);
+				delay(100000);
+				lcd_command(CLEAR);
+			}
 
 	}
 }
